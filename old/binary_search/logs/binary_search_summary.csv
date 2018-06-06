@@ -1,0 +1,85 @@
+bitflips:;5280
+SDCs:;5067
+Crashes:;213
+Simultaneous SDCs and Crashes:;0
+
+FaultModels SDCs:
+FaultModel ;#SDCs; percentage
+LSB bit-flip;5067;100.0
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+LSB bit-flip;213;4.203670811130847
+
+Variables that caused SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+100.0;232;232;__libc_multiple_libcs;../elf/dl-sysdep.c;58
+100.0;220;220;_dl_argc;rtld.c;82
+96.91629955947137;227;220;_rtld_global;rtld.c;140
+100.0;219;219;_dl_rtld_libname;rtld.c;210
+100.0;217;217;any_debug;rtld.c;2239
+100.0;214;214;__libc_enable_secure;../elf/dl-sysdep.c;57
+100.0;213;213;version_info;rtld.c;747
+100.0;213;213;audit_list;rtld.c;124
+97.70642201834863;218;213;_rtld_local;rtld.c;162
+100.0;211;211;tls_init_tp_called;rtld.c;585
+97.20930232558139;215;209;_rtld_global_ro;rtld.c;168
+100.0;206;206;__GI___libc_enable_secure;../elf/dl-sysdep.c;56
+100.0;204;204;preloadlist;rtld.c;745
+100.0;200;200;_dl_rtld_libname2;rtld.c;211
+100.0;198;198;__pointer_chk_guard_local;rtld.c;96
+100.0;192;192;load_time;rtld.c;216
+97.91666666666666;192;188;_rtld_local_ro;rtld.c;202
+100.0;187;187;library_path;rtld.c;743
+100.0;185;185;relocate_time;rtld.c;215
+100.0;182;182;start_time;rtld.c;217
+89.8989898989899;198;178;_dl_argv;rtld.c;86
+91.62303664921467;191;175;__GI__dl_argv;rtld.c;83
+66.66666666666666;222;148;_dl_skip_args;rtld.c;84
+62.08530805687204;211;131;user_entry;../elf/dl-sysdep.c;89
+100.0;68;68;preload_file;rtld.c;1551
+100.0;63;63;__PRETTY_FUNCTION__;rtld.c;0
+100.0;55;55;file_size;rtld.c;794
+100.0;52;52;rtld_total_time;rtld.c;326
+100.0;7;7;filename;binary_search.c;37
+100.0;6;6;_IO_file_jumps_mmap;fileops.c;1562
+100.0;5;5;input;binary_search.c;37
+100.0;5;5;size;binary_search.c;37
+100.0;5;5;_IO_file_jumps_maybe_mmap;fileops.c;1586
+100.0;5;5;__GI__IO_file_jumps;fileops.c;1537
+100.0;4;4;num_search;binary_search.c;50
+100.0;3;3;data;binary_search.c;52
+100.0;3;3;inputFile;binary_search.c;51
+100.0;3;3;size;binary_search.c;50
+100.0;3;3;finput;binary_search.c;38
+100.0;2;2;fp;binary_search.c;77
+100.0;2;2;argv;binary_search.c;48
+100.0;2;2;argc;binary_search.c;48
+100.0;2;2;outputFile;binary_search.c;51
+100.0;2;2;_IO_file_jumps;fileops.c;1560
+100.0;2;2;l;dl-reloc.c;311
+100.0;1;1;platform;dl-hwcaps.c;37
+100.0;1;1;fd;dl-load.c;889
+100.0;1;1;capstr;dl-load.c;101
+100.0;1;1;ranges;dl-reloc.c;258
+100.0;1;1;__libc_multiple_libcs;../csu/init-first.c;34
+100.0;1;1;nsid;dl-load.c;892
+100.0;1;1;tail;dl-deps.c;162
+100.0;1;1;r2;do-rel.h;50
+100.0;1;1;ref;dl-lookup.c;351
+100.0;1;1;operate;dl-error.c;162
+100.0;1;1;mapp;dl-addr.c;125
+100.0;1;1;fb;dl-load.c;2195
+100.0;1;1;skip;dl-lookup.c;354
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+37.91469194312796;211;80;user_entry;../elf/dl-sysdep.c;89
+33.33333333333333;222;74;_dl_skip_args;rtld.c;84
+10.1010101010101;198;20;_dl_argv;rtld.c;86
+8.37696335078534;191;16;__GI__dl_argv;rtld.c;83
+3.0837004405286343;227;7;_rtld_global;rtld.c;140
+2.7906976744186047;215;6;_rtld_global_ro;rtld.c;168
+2.293577981651376;218;5;_rtld_local;rtld.c;162
+2.083333333333333;192;4;_rtld_local_ro;rtld.c;202
+100.0;1;1;errstring;dl-error.c;161

@@ -1,0 +1,52 @@
+bitflips:;3485
+SDCs:;474
+Crashes:;108
+Simultaneous SDCs and Crashes:;0
+
+FaultModels SDCs:
+FaultModel ;#SDCs; percentage
+LSB bit-flip;474;100.0
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+LSB bit-flip;108;22.78481012658228
+
+Variables that caused SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+47.57505773672055;433;206;X;recursive_merge.c;40
+53.84615384615385;299;161;l;recursive_merge.c;40
+77.35849056603774;53;41;size;recursive_merge.c;66
+71.11111111111111;45;32;data;recursive_merge.c;68
+8.012820512820513;312;25;r;recursive_merge.c;40
+0.9389671361502347;426;4;mid;recursive_merge.c;43
+100.0;2;2;input;recursive_merge.c;53
+2.4390243902439024;41;1;tmp;recursive_merge.c;68
+25.0;4;1;X;recursive_merge.c;6
+100.0;1;1;mid;recursive_merge.c;8
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+6.730769230769231;312;21;r;recursive_merge.c;40
+3.864734299516908;414;16;tmp;recursive_merge.c;40
+4.013377926421405;299;12;l;recursive_merge.c;40
+2.771362586605081;433;12;X;recursive_merge.c;40
+27.77777777777778;36;10;_dl_skip_args;rtld.c;84
+18.6046511627907;43;8;user_entry;../elf/dl-sysdep.c;89
+8.16326530612245;49;4;_dl_argv;rtld.c;86
+8.88888888888889;45;4;__GI__dl_argv;rtld.c;83
+23.076923076923077;13;3;outputFile;recursive_merge.c;67
+5.084745762711865;59;3;_rtld_global_ro;rtld.c;168
+0.4694835680751174;426;2;mid;recursive_merge.c;43
+16.666666666666664;6;1;r;recursive_merge.c;6
+1.9607843137254901;51;1;_rtld_local;rtld.c;162
+1.8867924528301887;53;1;library_path;rtld.c;743
+1.8867924528301887;53;1;size;recursive_merge.c;66
+2.0408163265306123;49;1;__pointer_chk_guard_local;rtld.c;96
+2.4390243902439024;41;1;tmp;recursive_merge.c;68
+2.0;50;1;_rtld_global;rtld.c;140
+25.0;4;1;X;recursive_merge.c;6
+1.4925373134328357;67;1;start_time;rtld.c;217
+1.8181818181818181;55;1;__GI___libc_enable_secure;../elf/dl-sysdep.c;56
+1.8181818181818181;55;1;__libc_enable_secure;../elf/dl-sysdep.c;57
+2.272727272727273;44;1;_rtld_local_ro;rtld.c;202
+50.0;2;1;ti;recursive_merge.c;10

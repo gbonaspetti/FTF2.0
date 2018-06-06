@@ -1,0 +1,18 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+_dl_skip_args;rtld.c;84;0.5771534442901611;0-2;LSB bit-flip
+_rtld_global_ro;rtld.c;168;0.5446600914001465;0-2;LSB bit-flip
+_dl_skip_args;rtld.c;84;0.4956488609313965;0-2;LSB bit-flip
+_dl_skip_args;rtld.c;84;0.8434004783630371;0-2;LSB bit-flip
+user_entry;../elf/dl-sysdep.c;89;0.2633512020111084;0-2;LSB bit-flip
+__GI__dl_argv;rtld.c;83;0.18588638305664062;0-2;LSB bit-flip
+_dl_skip_args;rtld.c;84;0.34341001510620117;0-2;LSB bit-flip
+_dl_argv;rtld.c;86;0.5604007244110107;0-2;LSB bit-flip
+_dl_skip_args;rtld.c;84;1.032397747039795;0-2;LSB bit-flip
+user_entry;../elf/dl-sysdep.c;89;1.0396478176116943;0-2;LSB bit-flip
+user_entry;../elf/dl-sysdep.c;89;0.36252808570861816;0-2;LSB bit-flip
+n1;merge.c;11;0.4194653034210205;0-2;LSB bit-flip
+user_entry;../elf/dl-sysdep.c;89;1.011974811553955;0-2;LSB bit-flip
+tail;dl-deps.c;162;0.08158111572265625;0-2;LSB bit-flip
+audit_list;rtld.c;124;1.1503689289093018;0-2;LSB bit-flip
+_rtld_global;rtld.c;140;0.773367166519165;0-2;LSB bit-flip
+_rtld_local;rtld.c;162;1.1054773330688477;0-2;LSB bit-flip
