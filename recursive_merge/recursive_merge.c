@@ -41,12 +41,12 @@ void mergesort(unsigned * X, int l, int r, unsigned * tmp)
 {
     if (l >= r) return;
     int mid = (l+r)/2;
-    #pragma omp task firstprivate (X, l, mid, tmp)
+    //#pragma omp task firstprivate (X, l, mid, tmp)
     mergesort(X, l, mid, tmp);
-    #pragma omp task firstprivate (X, mid, r, tmp)
+    //#pragma omp task firstprivate (X, mid, r, tmp)
     mergesort(X, mid+1, r, tmp);
 
-    #pragma omp taskwait
+    //#pragma omp taskwait
     merge(X, l, r, tmp);
 }
 
@@ -88,8 +88,8 @@ int main(int argc, char** argv)
     //printf("Executing Sorting...\n");
     //for(int i=0; i<size; i++) printf("%u ",data[i]);
 
-    #pragma omp parallel
-    #pragma omp single
+    //#pragma omp parallel
+    //#pragma omp single
     mergesort(data, 0,size-1, tmp);
 
     //printf("\nDone\n");
