@@ -86,6 +86,7 @@ void mergeSort(int arr[], int n)
 
 void readInput(unsigned *input, char *filename, int size) {
 	FILE *finput;
+
 	if (finput = fopen(filename, "rb")) {
 		fread(input, size * sizeof(unsigned), 1 , finput);
 	} else {
@@ -100,14 +101,16 @@ unsigned * imerge_wrapper(int size, char * inputFile) {
 
     readInput(data, inputFile, size);
 
-		mergeSort(data, size);
+	mergeSort(data, size);
 
     return data;
 }
 
 void compare_output(int size, unsigned *data1, unsigned *data2, char *detectLog) {
-    int i;
+    
+	int i;
     FILE *fp;
+
     for(i=0; i<size; i++) {
         if(data1[i] != data2[i]) {
             if (fp = fopen(detectLog, "a")) {
@@ -155,10 +158,10 @@ int main(int argc, char** argv)
     compare_output(size, data1, data2, detectLog);
 
 
-		writeInput(data1, outputFile, size);
+	writeInput(data1, outputFile, size);
     //printf("\nDone\n");
 
-		free(data1);
+	free(data1);
     free(data2);
 
 	return 0;
