@@ -12,7 +12,7 @@ gen_bin: bubble.c generateInput.c
 
 gen_data: gen_bin
 	./genInput
-	./bubble 10 inputsort_1000000 gold_1000000
+	./bubble 10000 inputsort_1000000 gold_1000000
 
 mv_bin: gen_data
 	mkdir -p $(destDir)

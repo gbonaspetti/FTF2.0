@@ -40,7 +40,7 @@ void readInput(unsigned *input, char *filename, int size) {
   }
 }
 
-unsigned * ibubble_wrapper(int size, char * inputFile) {
+unsigned * bubble_wrapper(int size, char * inputFile) {
   unsigned *data = (unsigned *)malloc(size*sizeof(unsigned));
 
   readInput(data, inputFile, size);
@@ -92,9 +92,9 @@ int main(int argc, char** argv)
   }
 
   // Execute bubblesort and save the result at data1
-    data1 = ibubble_wrapper(size, inputFile);
+    data1 = bubble_wrapper(size, inputFile);
     // Execute bubblesort and save the result at data2
-    data2 = ibubble_wrapper(size, inputFile);
+    data2 = bubble_wrapper(size, inputFile);
 
     // Compare outputs to check for SDCs
     compare_output(size, data1, data2, detectLog);

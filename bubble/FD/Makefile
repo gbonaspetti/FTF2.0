@@ -12,7 +12,7 @@ gen_bin: bubble_fulldup.c generateInput.c
 
 gen_data: gen_bin
 	./genInput
-	./bubble_fulldup 10 inputsort_1000000 gold_1000000 /tmp/bubble_fulldup_detection.log
+	./bubble_fulldup 10000 inputsort_1000000 gold_1000000 /tmp/bubble_fulldup_detection.log
 
 mv_bin: gen_data
 	mkdir -p $(destDir)

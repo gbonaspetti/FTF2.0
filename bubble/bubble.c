@@ -64,18 +64,18 @@ int main(int argc, char** argv)
 	data = (unsigned *)malloc(size*sizeof(unsigned));
 
 	readInput(data, inputFile, size);
-
+/*
 	int i;
 	for(i=0;i<size;i++)
 		printf("%d  ", data[i]);
 	printf("\n\n");
-
+*/
 	bubbleSort(data, size);
-
+/*
 	for(i=0;i<size;i++)
 		printf("%d  ", data[i]);
 	printf("\n\n");
-
+*/
 	FILE *finput;
 	if (finput = fopen(outputFile, "wb")) {
 		fwrite(data, size * sizeof(unsigned), 1 , finput);
