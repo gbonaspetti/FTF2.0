@@ -88,8 +88,7 @@ int main(int argc, char** argv)
     //printf("Executing Sorting...\n");
     //for(int i=0; i<size; i++) printf("%u ",data[i]);
 
-    //#pragma omp parallel
-    //#pragma omp single
+
     mergesort(data, 0,size-1, tmp);
 
     //printf("\nDone\n");
