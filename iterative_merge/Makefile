@@ -12,13 +12,13 @@ gen_bin: merge.c generateInput.c
 
 gen_data: gen_bin
 	./genInput
-	./merge 100000 inputsort_100000 gold_100000
+	./merge 1000000 inputsort_1000000 gold_1000000
 
 mv_bin: gen_data
 	mkdir -p $(destDir)
-	cp genInput merge inputsort_100000 gold_100000 $(destDir)
+	cp genInput merge inputsort_1000000 gold_1000000 $(destDir)
 	@echo "All Done, executables should be in the $(destDir)"
 
 
 clean:
-	rm *.o merge genInput gold_100000 inputsort_100000
+	rm *.o merge genInput gold_1000000 inputsort_1000000

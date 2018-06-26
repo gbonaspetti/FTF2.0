@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define INPUTSIZE 100000
+#define INPUTSIZE 1000000
 int main(){
 
         unsigned *ndata = (unsigned*)malloc(INPUTSIZE*sizeof(unsigned));//new unsigned[INPUTSIZE];

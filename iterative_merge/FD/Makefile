@@ -12,13 +12,13 @@ gen_bin: merge_fulldup.c generateInput.c
 
 gen_data: gen_bin
 	./genInput
-	./merge_fulldup 100000 inputsort_100000 gold_100000 /tmp/merge_fulldup_detection.log
+	./merge_fulldup 1000000 inputsort_1000000 gold_1000000 /tmp/merge_fulldup_detection.log
 
 mv_bin: gen_data
 	mkdir -p $(destDir)
-	mv genInput merge_fulldup inputsort_100000 gold_100000 $(destDir)
+	mv genInput merge_fulldup inputsort_1000000 gold_1000000 $(destDir)
 	@echo "All Done, executables should be in the $(destDir)"
 
 
 clean:
-	rm *.o merge_fulldup genInput gold_100000 inputsort_100000
+	rm *.o merge_fulldup genInput gold_1000000 inputsort_1000000
