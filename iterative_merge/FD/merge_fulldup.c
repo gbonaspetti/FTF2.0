@@ -110,10 +110,13 @@ void compare_output(int size, unsigned *data1, unsigned *data2, char *detectLog)
     
 	int i;
     FILE *fp;
+                printf("%d", size);
+				
 
     for(i=0; i<size; i++) {
         if(data1[i] != data2[i]) {
             if (fp = fopen(detectLog, "a")) {
+				
                 fprintf(fp, "[%d]: %u %u\n",i,data1[i],data2[i]);
                 fclose(fp);
             }

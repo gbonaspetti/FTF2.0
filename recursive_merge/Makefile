@@ -12,13 +12,13 @@ gen_bin: recursive_merge.c generateInput.c
 
 gen_data: gen_bin
 	./genInput
-	./recursive_merge 1000000 inputsort_1000000 gold_1000000
+	./recursive_merge 100000000 inputsort_100000000 gold_100000000
 
 mv_bin: gen_data
 	mkdir -p $(destDir)
-	mv genInput recursive_merge inputsort_1000000 gold_1000000 $(destDir)
+	mv genInput recursive_merge inputsort_100000000 gold_100000000 $(destDir)
 	@echo "All Done, executables should be in the $(destDir)"
 
 
 clean: 
-	rm *.o recursive_merge genInput gold_1000000
+	rm *.o recursive_merge genInput gold_100000000

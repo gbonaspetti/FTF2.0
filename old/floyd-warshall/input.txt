@@ -1,8 +1,0 @@
-generated through ./graph_generator 30 500 200 1 ../tests/input_30
-
-./graph_generator 2000 20000 5000 33 ../tests/input_2k
-
-
-./graph_generator 10000 100000 400 ../tests666 ../tests/input_10k
-
-
